@@ -81,8 +81,9 @@ img {
 /*segunda seccion*/
 
 .second-section {
-    padding: 200px;
     background-color: yellow;
+    padding: 100px;
+    margin-top: -40px;
 }
 
 .second-photo {
@@ -103,6 +104,26 @@ img {
     margin-left: 143px;
 }
 
+.hack-container {
+    width: 50%;
+}
+
+.photo-container-2 {
+    width: 20%;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.form-container-2 {
+    float: right;
+}
+
+.p-2 {
+    width: 600px;
+    word-wrap: break-word;
+}
+
 
 /*tercera seccion*/
 
@@ -111,7 +132,6 @@ input {
 }
 
 .form-container {
-    width: 70%;
     display: inline;
 }
 
@@ -131,7 +151,8 @@ input {
     border-radius: 4px;
 }
 
-.button-input {
+.button-input,
+.button-hack {
     background-color: blue;
     border: none;
     color: white;
@@ -144,10 +165,15 @@ input {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .footer {
     padding: 10px;
     padding-bottom: 15px;
     background-color: #81BEF7;
+}
+
+#second-photo {
+    float: none;
 }
