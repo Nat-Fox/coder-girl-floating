@@ -73,10 +73,19 @@ function cambiarMensaje() {
 
 // Al boton hackathon agregar un evento que al hacerle clic le cambie float a imagen
 
-function floatImagen() {
-    var float = document.getElementById('second-photo').style.float;
-    console.log(float);
-    if (float == 'none') {
-        float = 'left';
+var toggleFloat = document.getElementById('toggle-float');
+
+toggleFloat.addEventListener('click', makeFloat);
+
+function makeFloat() {
+
+    var maybeFloat = document.getElementById('maybe-float');
+
+    if (maybeFloat.style.float !== 'right') {
+        maybeFloat.style.float = 'right'
+    } else {
+        maybeFloat.style.float = 'none';
     }
+
+
 }
